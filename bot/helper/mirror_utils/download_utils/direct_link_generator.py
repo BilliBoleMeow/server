@@ -402,7 +402,7 @@ def gdtot(url: str) -> str:
     By https://github.com/xcscxr """
 
     if CRYPT is None:
-        raise DirectDownloadLinkException("ERROR: CRYPT cookie not provided")
+        raise DirectDownloadLinkException("GDTOT Support Is Not Enabled.")
 
     match = re.findall(r'https?://(.+)\.gdtot\.(.+)\/\S+\/\S+', url)[0]
 
